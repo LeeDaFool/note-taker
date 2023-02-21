@@ -3,7 +3,7 @@ const path = require('path');
 // const { clog } = require('./middleware/clog');
 const api = require('./routes/index.js');
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3301;
 
 const app = express();
 
@@ -35,4 +35,3 @@ app.get('/notes', (req, res) =>
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT} 🚀`)
 );
-module.exports = router;
